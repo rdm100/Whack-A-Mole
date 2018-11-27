@@ -74,6 +74,7 @@ function peep(){
 function startGame(){
   scoreBoard.textContent = 0;
   timeout = false;
+  let score = 0; 
   peep();
   setTimeout(() => timeout = true, 20000)
 }
