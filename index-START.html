@@ -38,6 +38,7 @@
   const moles = document.querySelectorAll('.mole');
   let lastHole;
   let timeout = false;
+  let score = 0;
 
 function randomTime(minimum, maximum){
   return Math.round(Math.random() * (maximum - minimum) + minimum);
@@ -74,8 +75,19 @@ function startGame(){
   scoreBoard.textContent = 0;
   timeout = false;
   peep();
-  setTimeout(() => timeout = true, 2000)
+  setTimeout(() => timeout = true, 20000)
 }
+
+function whack(e){
+  console.log(e);
+  if(!e.isTrusted) return; //stop cheating from simulated clicks
+  score++;
+  scoreBoard.textContent = score;
+}
+
+moles.forEach(mole => {
+  mole.addEventListener("click", whack);
+});
 
 </script>
 </body>
