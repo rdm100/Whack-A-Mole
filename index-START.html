@@ -70,6 +70,13 @@ function peep(){
   }, time)
 }
 
+function startGame(){
+  scoreBoard.textContent = 0;
+  timeout = false;
+  peep();
+  setTimeout(() => timeout = true, 2000)
+}
+
 </script>
 </body>
 </html>
