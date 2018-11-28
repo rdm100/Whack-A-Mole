@@ -67,3 +67,13 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+.heading{
+  text-align: center;
+  font: 700 40px arial;
+}
+
+.buttoncenter {
+  text-align: center;
+}
+
