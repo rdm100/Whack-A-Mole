@@ -8,4 +8,4 @@ When you click on the mole after it has popped out you get one point added to th
 
 I added a timer function that counts how long is left in the game which is displayed and also a high score that is saved in local storage and updated whenever there is a new high score.
 
-![](images/30_00.png)
+![](images/30.png)
